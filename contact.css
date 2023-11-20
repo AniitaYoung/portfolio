@@ -1,0 +1,139 @@
+
+
+.contactgrid {
+    display: grid;
+    max-width: 1200px;
+    min-width: 220px;
+    position: relative;
+    margin: auto;
+    gap: 1px;
+    grid-template-rows: 100px 100px 100px 150px 50px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+}
+
+.snav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.cnav {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pnav {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row: 1;
+    display: flex;
+    justify-content: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Hubballi', sans-serif;
+    color: darkslategrey;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+h2:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Hubballi', sans-serif;
+    color: darkslategrey;
+    font-size: 20px;
+    font-weight:bolder ;
+}
+
+p {
+    font-family: 'Hubballi', sans-serif;
+    color: grey;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact {
+ grid-column-start: 1;
+ grid-column-end: 7;
+ grid-row: 2;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ z-index: 1;
+
+}
+
+/*
+video.contact:hover {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 2;
+} */
+
+.contacttext {
+ grid-column-start: 1;
+ grid-column-end: 7;
+ grid-row: 3;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+
+.imageme {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+}
+
+#dissolveImage {
+        /*opacity: 1;  Initial opacity
+        transition: opacity 0.5s ease; Smooth transition effect */
+        opacity: 0;
+       
+}
+
+#email {
+    font-family: 'Hubballi', sans-serif;
+    color: grey;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    opacity: 0;
+}
+
+
+footer {
+    font-family: 'Hubballi', sans-serif;
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    grid-row: 6;
+}
